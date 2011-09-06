@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Historical Document -- historical-data.org</title>
+  <meta name="description" content="historical-data.org is a set of extensible schemas that enables webmasters to embed structured historical and genealogical data on their web pages 
+for use by search engines and other applications.">
+  <link rel="stylesheet" type="text/css" href="styles/historicaldata.css">
+</head>
+
+<body class="">
+
+<div id="container">
+  <div id="intro">
+    <div id="pageHeader">
+      <div class="wrapper">
+        <h1><a href="index.html">historical-data.org</a></h1>
+      </div>
+    </div>
+    <div id="selectionbar">
+      <div class="wrapper">
+        <ul>
+          <li><a class="activelink" href="docs/schemas.html">Schemas</a></li>
+          <li><a href="index.html">Home</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="mainContent">
+<div id="main" role="main">
+  <h1 class="page-title"><a href="http://schema.org/Thing">Thing</a>  &gt; <a href="HistoricalDocument.html">Historical Document</a></h1>
+  A historical document
+  <table cellspacing="3" class="definition-table">
+    <thead>
+      <tr>
+        <th>Property</th>
+        <th style="min-width:120px;">Expected Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <thead class="supertype">
+      <tr>
+        <th class="supertype-name" colspan="3">Properties from <a href="http://schema.org/Thing">Thing</a></th>
+      </tr>
+    </thead>
+    <tbody class="supertype">
+      <tr>
+        <th class="prop-nam" scope="row"><code>description</code></th>
+        <td class="prop-ect">Text</td>
+        <td class="prop-desc">A short description of the item.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>image</code></th>
+        <td class="prop-ect">URL</td>
+        <td class="prop-desc">URL of an image of the item.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>name</code></th>
+        <td class="prop-ect">Text</td>
+        <td class="prop-desc">The name of the item.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>url</code></th>
+        <td class="prop-ect">Text</td>
+        <td class="prop-desc">URL of the item.</td>
+      </tr>
+    </tbody>
+    <thead class="supertype">
+      <tr>
+        <th class="supertype-name" colspan="3">Properties from <a href="HistoricalDocument.html">Historical Document</a></th>
+      </tr>
+    </thead>
+    <tbody class="supertype">
+      <tr>
+        <th class="prop-nam" scope="row"><code>agent</code></th>
+        <td class="prop-ect"><a href="http://schema.org/Person">Person</a></td>
+        <td class="prop-desc">Person who uploaded or provided the document.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>content</code></th>
+        <td class="prop-ect">Text</td>
+        <td class="prop-desc">Text content of the document.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>creator</code></th>
+        <td class="prop-ect"><a href="HistoricalPerson.html">Historical Person</a> or <a href="http://schema.org/Organization">Organization</a></td>
+        <td class="prop-desc">Person or organization (e.g. government agency, etc.) that created the document.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>documentDate</code></th>
+        <td class="prop-ect">Date</td>
+        <td class="prop-desc">Date the document was created.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>event</code></th>
+        <td class="prop-ect"><a href="HistoricalEvent.html">Historical Event</a></td>
+        <td class="prop-desc">Historical event at which or in relation to which the document was created.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>inLanguage</code></th>
+        <td class="prop-ect">Text</td>
+        <td class="prop-desc">The language of the content. Please use of of the language codes from the <a href="http://tools.ietf.org/html/bcp47">IETF BCP 47 standard</a>.</td>
+      </tr>      
+      <tr>
+        <th class="prop-nam" scope="row"><code>location</code></th>
+        <td class="prop-ect"><a href="http://schema.org/Place">Place</a></td>
+        <td class="prop-desc">Location where the content was created.</td>
+      </tr>      
+      <tr>
+        <th class="prop-nam" scope="row"><code>mentioned</code></th>
+        <td class="prop-ect"><a href="HistoricalPerson.html">Historical Person</a></td>
+        <td class="prop-desc">Person who is mentioned in the document.</td>
+      </tr>      
+      <tr>
+        <th class="prop-nam" scope="row"><code>note</code></th>
+        <td class="prop-ect">Text</td>
+        <td class="prop-desc">Note or comment related to the document.</td>
+      </tr>      
+      <tr>
+        <th class="prop-nam" scope="row"><code>rev</code></th>
+        <td class="prop-ect">Date</td>
+        <td class="prop-desc">Date of the most recent revision to the document or metadata.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>type</code></th>
+        <td class="prop-ect">Text</td>
+        <td class="prop-desc">Type of document.</td>
+      </tr>      
+    </tbody>
+  </table>
+  <div class="version">Schema Draft Version 0.2</div>
+</div>
+    </div>
+  </div>
+  <div id="footer">
+    <p><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" 
+src="http://i.creativecommons.org/l/by-sa/3.0/80x15.png" /></a><br />This <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" rel="dct:type">work</span> 
+is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.</p>
+  </div>
+</div>
+
+</body>
+</html>

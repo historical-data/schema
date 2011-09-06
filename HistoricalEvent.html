@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Historical Event - historical-data.org</title>
+  <meta name="description" content="historical-data.org is a set of extensible schemas that enables webmasters to embed structured historical and genealogical data on their web pages for use by search engines and other applications.">
+  <link rel="stylesheet" type="text/css" href="styles/historicaldata.css">
+</head>
+
+<body class="">
+
+<div id="container">
+  <div id="intro">
+    <div id="pageHeader">
+      <div class="wrapper">
+        <h1><a href="index.html">historical-data.org</a></h1>
+      </div>
+    </div>
+    <div id="selectionbar">
+      <div class="wrapper">
+        <ul>
+          <li><a class="activelink" href="docs/schemas.html">Schemas</a></li>
+          <li><a href="index.html">Home</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="mainContent">
+<div id="main" role="main">
+  <h1 class="page-title"><a href="http://schema.org/Thing">Thing</a> &gt; <a href="http://schema.org/Event">Event</a> &gt; <a href="HistoricalEvent.html">Historical Event</a></h1>
+  Event type: Historical event.
+  <table cellspacing="3" class="definition-table">
+    <thead>
+      <tr>
+        <th>Property</th>
+        <th style="min-width:120px;">Expected Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <thead class="supertype">
+      <tr>
+        <th class="supertype-name" colspan="3">Properties from <a href="http://schema.org/Thing">Thing</a></th>
+      </tr>
+    </thead>
+    <tbody class="supertype">
+      <tr>
+        <th class="prop-nam" scope="row"><code>description</code></th>
+        <td class="prop-ect">Text</td>
+        <td class="prop-desc">A short description of the item.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>image</code></th>
+        <td class="prop-ect">URL</td>
+        <td class="prop-desc">URL of an image of the item.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>name</code></th>
+        <td class="prop-ect">Text</td>
+        <td class="prop-desc">The name of the item.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>url</code></th>
+        <td class="prop-ect">Text</td>
+        <td class="prop-desc">URL of the item.</td>
+      </tr>
+    </tbody>
+    <thead class="supertype">
+      <tr>
+        <th class="supertype-name" colspan="3">Properties from <a href="http://schema.org/Event">Event</a></th>
+      </tr>
+    </thead>
+    <tbody class="supertype">
+      <tr>
+        <th class="prop-nam" scope="row"><code>duration</code></th>
+        <td class="prop-ect">Duration</td>
+        <td class="prop-desc">The duration of the item (movie, audio recording, event, etc.) in <a href=http://en.wikipedia.org/wiki/ISO_8601 target=new>ISO 8601 date format</a> (not required for single-day events).</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>endDate</code></th>
+        <td class="prop-ect">Date</td>
+        <td class="prop-desc">The end date and time of the event in <a href=http://en.wikipedia.org/wiki/ISO_8601 target=new>ISO 8601 date format</a> (not required for single-day events).</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>location</code></th>
+        <td class="prop-ect"><a href=Place>Place</a> or <a href=PostalAddress>PostalAddress</a></td>
+        <td class="prop-desc">The location of the event or organization.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>startDate</code></th>
+        <td class="prop-ect">Date</td>
+        <td class="prop-desc">The start date and time of the event (in <a href=http://en.wikipedia.org/wiki/ISO_8601 target=new>ISO 8601 date format</a>).</td>
+      </tr>
+    </tbody>
+    <thead class="supertype">
+      <tr>
+        <th class="supertype-name" colspan="3">Properties from <a href="HistoricalEvent.html">Historical Event</a></th>
+      </tr>
+    </thead>
+    <tbody class="supertype">
+      <tr>
+        <th class="prop-nam" scope="row"><code>agent</code></th>
+        <td class="prop-ect"><a href="http://schema.org/Person">Person</a></td>
+        <td class="prop-desc">Person who is responsible for creating/maintaining information about the event.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>attendees</code></th>
+        <td class="prop-ect"><a href="HistoricalPerson.html">Historical Person</a></td>
+        <td class="prop-desc">A historical person who was present the event. (Use <a href="HistoricalPerson.html">Historical Person</a> instead of <a href="http://schema.org/Person">Person</a>)</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>documents</code></th>
+        <td class="prop-ect"><a href="HistoricalDocument.html">Historical Document</a></td>
+        <td class="prop-desc">A historical document about or created at the event.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>media</code></th>
+        <td class="prop-ect"><a href="http://schema.org/MediaObject">Media Object</a></td>
+        <td class="prop-desc">Image, video or audio object associated with this event.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>rev</code></th>
+        <td class="prop-ect">Date</td>
+        <td class="prop-desc">Date of the most recent revision to event metadata.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>subEvents</code></th>
+        <td class="prop-ect"><a href="HistoricalEvent.html">Historical Event</a></td>
+        <td class="prop-desc">Events that are a part of this event. For example, a conference event includes many presentations, each are subEvents of the conference. (Use <a href="HistoricalEvent.html">Historical Event</a> instead of <a href="http://schema.org/Event">Event</a>)</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>superEvent</code></th>
+        <td class="prop-ect"><a href="HistoricalEvent.html">Historical Event</a></td>
+        <td class="prop-desc">An event that this event is a part of. For example, a collection of individual music performances might each have a music festival as their superEvent. (Use <a href="HistoricalEvent.html">Historical Event</a> instead of <a href="http://schema.org/Event">Event</a>)</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>type</code></th>
+        <td class="prop-ect">Type</td>
+        <td class="prop-desc">Type of event (e.g. reunion, employment, residence, education, etc.)</td>
+    </tbody>
+  </table>
+  <div class="version">Schema Draft Version 0.2</div>
+</div>
+    </div>
+  </div>
+  <div id="footer">
+    <p><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/80x15.png" /></a><br />This <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" rel="dct:type">work</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.</p>
+  </div>
+</div>
+
+</body>
+</html>
