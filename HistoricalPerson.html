@@ -97,9 +97,19 @@ title: Historical and Genealogical MicroData - HistoricalPerson
         <td class="prop-desc">Person who is responsible for providing or maintaining the information about the historical person. See also <a href="http://dublincore.org/documents/dcmi-terms/#terms-contributor">Dublin Core: contributor</a>.</td>
       </tr>
       <tr>
+        <th class="prop-nam" scope="row"><code>birth</code></th>
+        <td class="prop-ect"><a href="HistoricalEvent.html">HistoricalEvent</a></td>
+        <td class="prop-desc">An event describing the details of a person's birth. (Replaces <a href="http://schema.org/Person">Person</a> <code>birthDate</code>)</td>
+      </tr>
+      <tr>
         <th class="prop-nam" scope="row"><code>christening</code></th>
         <td class="prop-ect"><a href="HistoricalEvent.html">HistoricalEvent</a></td>
         <td class="prop-desc">An event describing the details of a person's baptism or christening.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>death</code></th>
+        <td class="prop-ect"><a href="HistoricalEvent.html">HistoricalEvent</a></td>
+        <td class="prop-desc">An event describing the details of a person's death. (Replaces <a href="http://schema.org/Person">Person</a> <code>deathDate</code>)</td>
       </tr>
       <tr>
         <th class="prop-nam" scope="row"><code>burial</code></th>
@@ -107,14 +117,14 @@ title: Historical and Genealogical MicroData - HistoricalPerson
         <td class="prop-desc">An event describing the details of a person's burial.</td>
       </tr>
       <tr>
-        <th class="prop-nam" scope="row"><code>birth</code></th>
-        <td class="prop-ect"><a href="HistoricalEvent.html">HistoricalEvent</a></td>
-        <td class="prop-desc">An event describing the details of a person's birth. (Replaces <a href="http://schema.org/Person">Person</a> <code>birthDate</code>)</td>
+        <th class="prop-nam" scope="row"><code>spouses</code></th>
+        <td class="prop-ect"><a href="HistoricalPerson.html">HistoricalPerson</a></td>
+        <td class="prop-desc">The spouses of the person.</td>
       </tr>
       <tr>
-        <th class="prop-nam" scope="row"><code>death</code></th>
+        <th class="prop-nam" scope="row"><code>marriages</code></th>
         <td class="prop-ect"><a href="HistoricalEvent.html">HistoricalEvent</a></td>
-        <td class="prop-desc">An event describing the details of a person's death. (Replaces <a href="http://schema.org/Person">Person</a> <code>deathDate</code>)</td>
+        <td class="prop-desc">Events describing the details of a person's marriages.</td>
       </tr>
       <tr>
         <th class="prop-nam" scope="row"><code>sources</code></th>
@@ -126,11 +136,6 @@ title: Historical and Genealogical MicroData - HistoricalPerson
         <td class="prop-ect"><a href="HistoricalEvent.html">HistoricalEvent</a></td>
         <td class="prop-desc">An event describing a significant incident in the lifetime of a person. (Use in place of <a href="http://schema.org/Person">Person</a> 
 <code>homeLocation</code>, <code>jobTitle</code>, <code>memberOf</code>, <code>worksFor</code> and for other significant life events)</td>
-      </tr>
-      <tr>
-        <th class="prop-nam" scope="row"><code>spouses</code></th>
-        <td class="prop-ect"><a href="HistoricalPerson.html">HistoricalPerson</a></td>
-        <td class="prop-desc">The spouses of the person.</td>
       </tr>
       <tr>
         <th class="prop-nam" scope="row"><code>modifiedDate</code></th>
