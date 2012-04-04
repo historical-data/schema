@@ -48,9 +48,59 @@ title: Historical and Genealogical MicroData - HistoricalPerson
     </thead>
     <tbody class="supertype">
       <tr>
+        <th class="prop-nam" scope="row"><code>additionalName</code></th>
+        <td class="prop-ect">Text</td>
+        <td class="prop-desc">An additional name for a Person, can be used for a middle name.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>address</code></th>
+        <td class="prop-ect"><a href="http://schema.org/PostalAddress">PostalAddress</a></td>
+        <td class="prop-desc">Physical address of the item.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>affiliation</code></th>
+        <td class="prop-ect"><a href="http://schema.org/Organization">Organization</a></td>
+        <td class="prop-desc">An organization that this person is affiliated with. For example, a school/university, a club, or a team.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>alumniOf</code></th>
+        <td class="prop-ect"><a href="http://schema.org/EducationalOrganization">EducationalOrganization</a></td>
+        <td class="prop-desc">An educational organizations that the person is an alumni of.</td>
+      </tr>
+      <tr>
         <th class="prop-nam" scope="row"><code>awards</code></th>
         <td class="prop-ect">Text</td>
         <td class="prop-desc">Awards won by this person or for this creative work.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>birthDate</code></th>
+        <td class="prop-ect">Date</td>
+        <td class="prop-desc">Replaced by <a href="http://schema.org/HistoricalPerson">HistoricalPerson</a> "birth" field.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>contactPoints</code></th>
+        <td class="prop-ect"><a href="http://schema.org/ContactPoint">ContactPoint</a></td>
+        <td class="prop-desc">A contact point for a person or organization.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>deathDate</code></th>
+        <td class="prop-ect">Date</td>
+        <td class="prop-desc">Replaced by <a href="http://schema.org/HistoricalPerson">HistoricalPerson</a> "death" field.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>email</code></th>
+        <td class="prop-ect">Text</td>
+        <td class="prop-desc">Email address.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>familyName</code></th>
+        <td class="prop-ect">Text</td>
+        <td class="prop-desc">Family name. In the U.S., the last name of an Person. This can be used along with givenName instead of the Name property.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>faxNumber</code></th>
+        <td class="prop-ect">Text</td>
+        <td class="prop-desc">The fax number.</td>
       </tr>
       <tr>
         <th class="prop-nam" scope="row"><code>gender</code></th>
@@ -58,9 +108,59 @@ title: Historical and Genealogical MicroData - HistoricalPerson
         <td class="prop-desc">Gender of the person. Legal values are "male", "female", and "unknown".</td>
       </tr>
       <tr>
+        <th class="prop-nam" scope="row"><code>givenName</code></th>
+        <td class="prop-ect">Text</td>
+        <td class="prop-desc">Given name. In the U.S., the first name of a Person. This can be used along with familyName instead of the Name property.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>homeLocation</code></th>
+        <td class="prop-ect"><a href="http://schema.org/Place">Place</a> or <a href="http://schema.org/ContactPoint">ContactPoint</a></td>
+        <td class="prop-desc">A contact location for a person's residence.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>honorificPrefix</code></th>
+        <td class="prop-ect">Text</td>
+        <td class="prop-desc">An honorific prefix preceding a Person's name such as Dr/Mrs/Mr.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>honorificSuffix</code></th>
+        <td class="prop-ect">Text</td>
+        <td class="prop-desc">An honorific suffix preceding a Person's name such as M.D. /PhD/MSCSW.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>interactionCount</code></th>
+        <td class="prop-ect">Text</td>
+        <td class="prop-desc">A count of a specific user interactions with this item&mdash;for example, <code>20 UserLikes</code>, <code>5 UserComments</code>, or <code>300 UserDownloads</code>. The user interaction type should be one of the sub types of <a href=UserInteraction>UserInteraction</a>.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>jobTitle</code></th>
+        <td class="prop-ect">Text</td>
+        <td class="prop-desc">The job title of the person (for example, Financial Manager).</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>memberOf</code></th>
+        <td class="prop-ect"><a href="Organization">Organization</a></td>
+        <td class="prop-desc">An organization to which the person belongs.</td>
+      </tr>
+      <tr>
         <th class="prop-nam" scope="row"><code>nationality</code></th>
         <td class="prop-ect"><a href="http://schema.org/Country">Country</a></td>
         <td class="prop-desc">Nationality of the person.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>telephone</code></th>
+        <td class="prop-ect">Text</td>
+        <td class="prop-desc">The telephone number.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>workLocation</code></th>
+        <td class="prop-ect"><a href=ContactPoint>ContactPoint</a></td>
+        <td class="prop-desc">A contact location for a person's place of work.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>worksFor</code></th>
+        <td class="prop-ect"><a href=Organization>Organization</a></td>
+        <td class="prop-desc">Organizations that the person works for.</td>
       </tr>
     </tbody>
     <thead class="supertype">
@@ -75,14 +175,44 @@ title: Historical and Genealogical MicroData - HistoricalPerson
         <td class="prop-desc">A child of the person. (Use <a href="HistoricalPerson.html">HistoricalPerson</a> instead of <a href="http://schema.org/Person">Person</a>.)</td>
       </tr>
       <tr>
+        <th class="prop-nam" scope="row"><code>colleagues</code></th>
+        <td class="prop-ect"><a href="HistoricalPerson.html">HistoricalPerson</a></td>
+        <td class="prop-desc">A colleague of the person. (Use <a href="HistoricalPerson.html">HistoricalPerson</a> instead of <a href="http://schema.org/Person">Person</a>.)</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>follows</code></th>
+        <td class="prop-ect"><a href="HistoricalPerson.html">HistoricalPerson</a></td>
+        <td class="prop-desc">The most generic uni-directional social relation. (Use <a href="HistoricalPerson.html">HistoricalPerson</a> instead of <a href="http://schema.org/Person">Person</a>.)</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>knows</code></th>
+        <td class="prop-ect"><a href="HistoricalPerson.html">HistoricalPerson</a></td>
+        <td class="prop-desc">The most generic bi-directional social/work relation. (Use <a href="HistoricalPerson.html">HistoricalPerson</a> instead of <a href="http://schema.org/Person">Person</a>.)</td>
+      </tr>
+      <tr>
         <th class="prop-nam" scope="row"><code>parents</code></th>
         <td class="prop-ect"><a href="HistoricalPerson.html">HistoricalPerson</a></td>
         <td class="prop-desc">A parent of the person. (Use <a href="HistoricalPerson.html">HistoricalPerson</a> instead of <a href="http://schema.org/Person">Person</a>.)</td>
       </tr>
       <tr>
+        <th class="prop-nam" scope="row"><code>performerIn</code></th>
+        <td class="prop-ect"><a href="HistoricalEvent.html">HistoricalEvent</a></td>
+        <td class="prop-desc">Event that this person is a performer or participant in. (Use <a href="HistoricalEvent.html">HistoricalEvent</a> instead of <a href="http://schema.org/Event">Event</a>.)</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>relatedTo</code></th>
+        <td class="prop-ect"><a href="HistoricalPerson.html">HistoricalPerson</a></td>
+        <td class="prop-desc">The most generic familial relation. (Use <a href="HistoricalPerson.html">HistoricalPerson</a> instead of <a href="http://schema.org/Person">Person</a>.)</td>
+      </tr>
+      <tr>
         <th class="prop-nam" scope="row"><code>siblings</code></th>
         <td class="prop-ect"><a href="HistoricalPerson.html">HistoricalPerson</a></td>
         <td class="prop-desc">A sibling of the person. (Use <a href="HistoricalPerson.html">HistoricalPerson</a> instead of <a href="http://schema.org/Person">Person</a>.)</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>spouse</code></th>
+        <td class="prop-ect"><a href="HistoricalPerson.html">HistoricalPerson</a></td>
+        <td class="prop-desc">A spouse of the person. (Use <a href="HistoricalPerson.html">HistoricalPerson</a> instead of <a href="http://schema.org/Person">Person</a>.)</td>
       </tr>
     </tbody>
     <thead class="supertype">
