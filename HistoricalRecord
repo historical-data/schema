@@ -4,7 +4,7 @@ title: Historical and Genealogical MicroData - HistoricalRecord
 ---
 
 <div id="main" role="main">
-  <h1 class="page-title"><a href="http://schema.org/Thing">Thing</a>  &gt; <a href="HistoricalRecord.html">HistoricalRecord</a></h1>
+  <h1 class="page-title"><a href="http://schema.org/Thing">Thing</a> &gt; <a href="http://schema.org/CreativeWork">CreativeWork</a> &gt; <a href="HistoricalRecord">HistoricalRecord</a></h1>
   <table cellspacing="3" class="definition-table">
     <thead>
       <tr>
@@ -41,67 +41,266 @@ title: Historical and Genealogical MicroData - HistoricalRecord
       </tr>
     </tbody>
     <thead class="supertype">
-      <tr>
-        <th class="supertype-name" colspan="3">Properties from <a href="HistoricalRecord.html">HistoricalRecord</a></th>
+	  <tr>
+        <th class="supertype-name" colspan="3">Properties from <a href="http://schema.org/CreativeWork">CreativeWork</a></th>
       </tr>
     </thead>
     <tbody class="supertype">
       <tr>
-        <th class="prop-nam" scope="row"><code>contributor</code></th>
-        <td class="prop-ect"><a href="http://schema.org/Person">Person</a></td>
-        <td class="prop-desc">Person who uploaded or provided the record. See also <a href="http://dublincore.org/documents/dcmi-terms/#terms-contributor">Dublin Core: contributor</a>.</td>
+	      <th class="prop-nam" scope="row"><code>about</code></th>
+        <td class="prop-ect"><a href="http://schema.org/Thing">Thing</a></td>
+        <td class="prop-desc">The subject matter of the content.</td>
       </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>accountablePerson</code></th>
+        <td class="prop-ect"><a href="http://schema.org/Person">Person</a></td>
+        <td class="prop-desc">Specifies the Person that is legally accountable for the CreativeWork.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>aggregateRating</code></th>
+        <td class="prop-ect"><a href="http://schema.org/AggregateRating">AggregateRating</a></td>
+        <td class="prop-desc">The overall rating, based on a collection of reviews or ratings, of the item.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>alternativeHeadline</code></th>
+        <td class="prop-ect">Text</td>
+        <td class="prop-desc">A secondary title of the CreativeWork.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>associatedMedia</code></th>
+        <td class="prop-ect"><a href="http://schema.org/MediaObject">MediaObject</a></td>
+        <td class="prop-desc">The media objects that encode this creative work. This property is a synonym for encodings.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>audio</code></th>
+        <td class="prop-ect"><a href="http://schema.org/AudioObject">AudioObject</a></td>
+        <td class="prop-desc">An embedded audio object.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>author</code></th>
+        <td class="prop-ect"><a href="http://schema.org/Person">Person</a> or <a href="http://schema.org/Organization">Organization</a></td>
+        <td class="prop-desc">The author of this content. Please note that author is special in that HTML 5 provides a special mechanism for indicating authorship via the rel tag. That is equivalent to this and may be used interchangeably.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>award</code></th>
+        <td class="prop-ect">Text</td>
+        <td class="prop-desc">An award won by this person or for this creative work.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>awards</code></th>
+        <td class="prop-ect">Text</td>
+        <td class="prop-desc">Awards won by this person or for this creative work. (legacy spelling; see singular form, award)</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>comment</code></th>
+        <td class="prop-ect"><a href="http://schema.org/UserComments">UserComments</a></td>
+        <td class="prop-desc">Comments, typically from users, on this CreativeWork.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>contentLocation</code></th>
+        <td class="prop-ect"><a href="http://schema.org/Place">Place</a></td>
+        <td class="prop-desc">The location of the content.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>contentRating</code></th>
+        <td class="prop-ect">Text</td>
+        <td class="prop-desc">Official rating of a piece of content&mdash;for example,'MPAA PG-13'.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>contributor</code></th>
+        <td class="prop-ect"><a href="http://schema.org/Person">Person</a> or <a href="http://schema.org/Organization">Organization</a></td>
+        <td class="prop-desc">A secondary contributor to the CreativeWork.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>copyrightHolder</code></th>
+        <td class="prop-ect"><a href="http://schema.org/Person">Person</a> or <a href="http://schema.org/Organization">Organization</a></td>
+        <td class="prop-desc">The party holding the legal copyright to the CreativeWork.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>copyrightYear</code></th>
+        <td class="prop-ect">Number</td>
+        <td class="prop-desc">The year during which the claimed copyright for the CreativeWork was first asserted.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>creator</code></th>
+        <td class="prop-ect"><a href="http://schema.org/Person">Person</a> or <a href="http://schema.org/Organization">Organization</a></td>
+        <td class="prop-desc">The creator/author of this CreativeWork or UserComments. This is the same as the Author property for CreativeWork.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>dateCreated</code></th>
+        <td class="prop-ect">Date</td>
+        <td class="prop-desc">The date on which the CreativeWork was created.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>dateModified</code></th>
+        <td class="prop-ect">Date</td>
+        <td class="prop-desc">The date on which the CreativeWork was most recently modified.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>datePublished</code></th>
+        <td class="prop-ect">Date</td>
+        <td class="prop-desc">Date of first broadcast/publication.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>discussionUrl</code></th>
+        <td class="prop-ect">URL</td>
+        <td class="prop-desc">A link to the page containing the comments of the CreativeWork.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>editor</code></th>
+        <td class="prop-ect"><a href="http://schema.org/Person">Person</a></td>
+        <td class="prop-desc">Specifies the Person who edited the CreativeWork.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>encoding</code></th>
+        <td class="prop-ect"><a href="http://schema.org/MediaObject">MediaObject</a></td>
+        <td class="prop-desc">A media object that encode this CreativeWork.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>encodings</code></th>
+        <td class="prop-ect"><a href="http://schema.org/MediaObject">MediaObject</a></td>
+        <td class="prop-desc">The media objects that encode this creative work (legacy spelling; see singular form, encoding).</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>genre</code></th>
+        <td class="prop-ect">Text</td>
+        <td class="prop-desc">Genre of the creative work</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>headline</code></th>
+        <td class="prop-ect">Text</td>
+        <td class="prop-desc">Headline of the article</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>inLanguage</code></th>
+        <td class="prop-ect">Text</td>
+        <td class="prop-desc">The language of the content. please use one of the language codes from the <a href=http://tools.ietf.org/html/bcp47>IETF BCP 47 standard.</a></td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>interactionCount</code></th>
+        <td class="prop-ect">Text</td>
+        <td class="prop-desc">A count of a specific user interactions with this item&mdash;for example, <code>20 UserLikes</code>, <code>5 UserComments</code>, or <code>300 UserDownloads</code>. The user interaction type should be one of the sub types of <a href="http://schema.org/UserInteraction">UserInteraction</a>.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>isFamilyFriendly</code></th>
+        <td class="prop-ect">Boolean</td>
+        <td class="prop-desc">Indicates whether this content is family friendly.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>keywords</code></th>
+        <td class="prop-ect">Text</td>
+        <td class="prop-desc">The keywords/tags used to describe this content.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>mentions</code></th>
+        <td class="prop-ect"><a href="http://schema.org/Thing">Thing</a></td>
+        <td class="prop-desc">Indicates that the CreativeWork contains a reference to, but is not necessarily about a concept.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>offers</code></th>
+        <td class="prop-ect"><a href="http://schema.org/Offer">Offer</a></td>
+        <td class="prop-desc">An offer to sell this item&mdash;for example, an offer to sell a product, the DVD of a movie, or tickets to an event.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>provider</code></th>
+        <td class="prop-ect"><a href="http://schema.org/Person">Person</a> or <a href="http://schema.org/Organization">Organization</a></td>
+        <td class="prop-desc">Specifies the Person or Organization that distributed the CreativeWork.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>publisher</code></th>
+        <td class="prop-ect"><a href="http://schema.org/Organization">Organization</a></td>
+        <td class="prop-desc">The publisher of the creative work.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>publishingPrinciples</code></th>
+        <td class="prop-ect">URL</td>
+        <td class="prop-desc">Link to page describing the editorial principles of the organization primarily responsible for the creation of the CreativeWork.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>review</code></th>
+        <td class="prop-ect"><a href="http://schema.org/Review">Review</a></td>
+        <td class="prop-desc">A review of the item.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>reviews</code></th>
+        <td class="prop-ect"><a href="http://schema.org/Review">Review</a></td>
+        <td class="prop-desc">Review of the item (legacy spelling; see singular form, review).</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>sourceOrganization</code></th>
+        <td class="prop-ect"><a href="http://schema.org/Organization">Organization</a></td>
+        <td class="prop-desc">The Organization on whose behalf the creator was working.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>thumbnailUrl</code></th>
+        <td class="prop-ect">URL</td>
+        <td class="prop-desc">A thumbnail image relevant to the Thing.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>version</code></th>
+        <td class="prop-ect">Number</td>
+        <td class="prop-desc">The version of the CreativeWork embodied by a specified resource.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>video</code></th>
+        <td class="prop-ect"><a href="http://schema.org/VideoObject">VideoObject</a></td>
+        <td class="prop-desc">An embedded video object.</td>
+      </tr>
+    </tbody>
+    <thead class="supertype">
+      <tr>
+        <th class="supertype-name" colspan="3">Properties from <a href="HistoricalRecord">HistoricalRecord</a></th>
+      </tr>
+    </thead>
+    <tbody class="supertype">
       <tr>
         <th class="prop-nam" scope="row"><code>content</code></th>
         <td class="prop-ect">Text</td>
         <td class="prop-desc">Text content of the record.</td>
       </tr>
       <tr>
-        <th class="prop-nam" scope="row"><code>creator</code></th>
-        <td class="prop-ect"><a href="HistoricalPerson.html">HistoricalPerson</a> or <a href="http://schema.org/Organization">Organization</a>.</td>
-        <td class="prop-desc">Person or organization (e.g. government agency, etc.) that created the record. See also <a href="http://dublincore.org/documents/dcmi-terms/#terms-creator">Dublin Core: creator</a>.</td>
+        <th class="prop-nam" scope="row"><code>contributor</code></th>
+        <td class="prop-ect"><a href="http://schema.org/Person">Person</a> or <a href="http://schema.org/Organization">Organization</a></td>
+        <td class="prop-desc">Person or Organization who uploaded or provided the record. See also <a href="http://dublincore.org/documents/dcmi-terms/#terms-contributor">Dublin Core: contributor</a>.
+          *Question: CreativeWork already has 'contributor' but with a slightly different definition.
+          How should we deal with this? Just remove this, rename it, or keep this as a clarification?</td>
       </tr>
       <tr>
         <th class="prop-nam" scope="row"><code>dates</code></th>
         <td class="prop-ect">Date</td>
-        <td class="prop-desc">The date(s) and time periods that are referenced by the <em>content</em> of the record. This property is described by Dublin Core as <a href="http://dublincore.org/documents/dcmi-terms/#terms-temporal">"temporal coverage".</a></td>
+        <td class="prop-desc">The date(s) and time periods that are referenced by the <em>content</em> of the record. This property is described by Dublin Core as <a href="http://dublincore.org/documents/dcmi-terms/#terms-temporal">"temporal coverage".</a>
+          *Question: Are these references to Dublin Core useful? I didn't get much out of them.</td>
       </tr>
-      <tr>
-      <tr>
-        <th class="prop-nam" scope="row"><code>language</code></th>
-        <td class="prop-ect">Text</td>
-        <td class="prop-desc">The language of the content of the record. Please use of of the language codes from the <a href="http://tools.ietf.org/html/bcp47">IETF BCP 47 standard</a>.</td>
-      </tr>      
-      <tr>
-        <th class="prop-nam" scope="row"><code>locations</code></th>
-        <td class="prop-ect">Date</td>
-        <td class="prop-desc">The place(s) and locations that are referenced by the <em>content</em> of the record. This property is described by Dublin Core as <a href="http://dublincore.org/documents/dcmi-terms/#terms-spatial">"spatial coverage".</a></td>
-      </tr>
-      <tr>
-        <th class="prop-nam" scope="row"><code>persons</code></th>
-        <td class="prop-ect"><a href="HistoricalPerson.html">HistoricalPerson</a></td>
-        <td class="prop-desc">Persons that are described or referenced by this record.</td>
-      </tr>      
       <tr>
         <th class="prop-nam" scope="row"><code>events</code></th>
-        <td class="prop-ect"><a href="HistoricalEvent.html">HistoricalEvent</a></td>
-        <td class="prop-desc">Events that are described or referenced by this record. </td>
+        <td class="prop-ect"><a href="http://schema.org/Event">Event</a></td>
+        <td class="prop-desc">Events that are described or referenced by this record.</td>
       </tr>      
       <tr>
         <th class="prop-nam" scope="row"><code>families</code></th>
-        <td class="prop-ect"><a href="HistoricalFamily.html">HistoricalFamily</a>.</td>
+        <td class="prop-ect"><a href="Family">Family</a></td>
         <td class="prop-desc">Families that are described or referenced by this record.</td>
       </tr>      
+      <tr>
+	    <th class="prop-nam" scope="row"><code>historicalCollection</code></th>
+	    <td class="prop-ect">Text</td>
+	    <td class="prop-desc">The name of the data collection that this record came from—for example, '1940 U.S. Census'.
+	  </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>locations</code></th>
+        <td class="prop-ect"><a href="http://schema.org/Place">Place</a></td>
+        <td class="prop-desc">The place(s) and locations that are referenced by the <em>content</em> of the record. This property is described by Dublin Core as <a href="http://dublincore.org/documents/dcmi-terms/#terms-spatial">"spatial coverage".</a></td>
+      </tr>
       <tr>
         <th class="prop-nam" scope="row"><code>note</code></th>
         <td class="prop-ect">Text</td>
         <td class="prop-desc">Note or comment related to the record.</td>
       </tr>      
       <tr>
-        <th class="prop-nam" scope="row"><code>modifiedDate</code></th>
-        <td class="prop-ect">Date</td>
-        <td class="prop-desc">Date of the most recent revision to the information about record.</td>
-      </tr>
+        <th class="prop-nam" scope="row"><code>persons</code></th>
+        <td class="prop-ect"><a href="http://schema.org/Person">Person</a></td>
+        <td class="prop-desc">Persons that are described or referenced by this record.</td>
+      </tr>      
       <tr>
         <th class="prop-nam" scope="row"><code>type</code></th>
         <td class="prop-ect">Text</td>
@@ -109,4 +308,5 @@ title: Historical and Genealogical MicroData - HistoricalRecord
       </tr>      
     </tbody>
   </table>
+  <div class="version">Schema Draft Version 0.4</div>
 </div>

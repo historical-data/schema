@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Historical and Genealogical MicroData - HistoricalFamily
+title: Historical and Genealogical MicroData - Family
 ---
 
 <div id="main" role="main">
-  <h1 class="page-title"><a href="http://schema.org/Thing">Thing</a> &gt; <a href="HistoricalFamily.html">HistoricalFamily</a></h1>
-  Historical nuclear family
+  <h1 class="page-title"><a href="http://schema.org/Thing">Thing</a> &gt; <a href="Family">Family</a></h1>
+  A historical or genealogical nuclear family
   <table cellspacing="3" class="definition-table">
     <thead>
       <tr>
@@ -43,51 +43,55 @@ title: Historical and Genealogical MicroData - HistoricalFamily
     </tbody>
     <thead class="supertype">
       <tr>
-        <th class="supertype-name" colspan="3">Properties from <a href="HistoricalFamily.html">HistoricalFamily</a></th>
+        <th class="supertype-name" colspan="3">Properties from <a href="Family">Family</a></th>
       </tr>
     </thead>
     <tbody class="supertype">
       <tr>
-        <th class="prop-nam" scope="row"><code>contributor</code></th>
-        <td class="prop-ect"><a href="http://schema.org/Person">Person</a></td>
-        <td class="prop-desc">Person responsible for providing or maintaining information about the family. See also <a href="http://dublincore.org/documents/dcmi-terms/#terms-contributor">Dublin Core: contributor</a>.</td>
-      </tr>
-      <tr>
         <th class="prop-nam" scope="row"><code>adoptions</code></th>
-        <td class="prop-ect"><a href="HistoricalEvent.html">HistoricalEvent</a></td>
-        <td class="prop-desc">Historical events describing the adoptions in the family.</td>
+        <td class="prop-ect"><a href="http://schema.org/Event">Event</a></td>
+        <td class="prop-desc">Events describing the adoptions in the family.</td>
       </tr>
       <tr>
         <th class="prop-nam" scope="row"><code>children</code></th>
-        <td class="prop-ect"><a href="HistoricalPerson.html">HistoricalPerson</a></td>
-        <td class="prop-desc">Historical person with the role of child in the family.</td>
+        <td class="prop-ect"><a href="http://schema.org/Person">Person</a></td>
+        <td class="prop-desc">Person with the role of child in the family.</td>
+      </tr>
+        <th class="prop-nam" scope="row"><code>contributor</code></th>
+        <td class="prop-ect"><a href="http://schema.org/Person">Person</a> or <a href="http://schema.org/Organization">Organization</a></td>
+        <td class="prop-desc">Person or Organization responsible for providing or maintaining information about the family. See also <a href="http://dublincore.org/documents/dcmi-terms/#terms-contributor">Dublin Core: contributor</a>.</td>
       </tr>
       <tr>
-        <th class="prop-nam" scope="row"><code>divorce</code></th>
-        <td class="prop-ect"><a href="HistoricalEvent.html">HistoricalEvent</a></td>
-        <td class="prop-desc">An event describing the details of a divorce.</td>
-      </tr>
-      <tr>
-        <th class="prop-nam" scope="row"><code>sources</code></th>
-        <td class="prop-ect"><a href="HistoricalRecord.html">HistoricalRecord</a></td>
-        <td class="prop-desc">A historical record containing information about the family.</td>
-      </tr>
-      <tr>
-        <th class="prop-nam" scope="row"><code>parents</code></th>
-        <td class="prop-ect"><a href="HistoricalPerson.html">HistoricalPerson</a></td>
-        <td class="prop-desc">Historical person with the role of parent/partner in the family.</td>
-      </tr>
-      <tr>
-        <th class="prop-nam" scope="row"><code>marriage</code></th>
-        <td class="prop-ect"><a href="HistoricalEvent.html">HistoricalEvent</a></td>
-        <td class="prop-desc">An event describing the details of a marriage.</td>
-      </tr>
-      <tr>
-        <th class="prop-nam" scope="row"><code>modifiedDate</code></th>
+        <th class="prop-nam" scope="row"><code>dateModified</code></th>
         <td class="prop-ect">Date</td>
         <td class="prop-desc">Date of the most recent revision to the information about the family.</td>
       </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>divorce</code></th>
+        <td class="prop-ect"><a href="http://schema.org/Event">Event</a></td>
+        <td class="prop-desc">An event describing the details of a divorce.</td>
+      </tr>
+      <tr>
+	    <th class="prop-nam" scope="row"><code>historicalCollection</code></th>
+	    <td class="prop-ect">Text</td>
+	    <td class="prop-desc">The name of the data collection that this family record came from—for example, '1940 U.S. Census'.
+	  </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>marriage</code></th>
+        <td class="prop-ect"><a href="http://schema.org/Event">Event</a></td>
+        <td class="prop-desc">An event describing the details of a marriage.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>parents</code></th>
+        <td class="prop-ect"><a href="http://schema.org/Person">Person</a></td>
+        <td class="prop-desc">Person with the role of parent/partner in the family.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>sources</code></th>
+        <td class="prop-ect"><a href="HistoricalRecord">HistoricalRecord</a></td>
+        <td class="prop-desc">A historical record containing information about the family.</td>
+      </tr>
     </tbody>
   </table>
-  <div class="version">Schema Draft Version 0.2</div>
+  <div class="version">Schema Draft Version 0.4</div>
 </div>
