@@ -21,29 +21,14 @@ title: Historical and Genealogical MicroData - Event
     </thead>
     <tbody class="supertype">
       <tr>
-        <th class="prop-nam" scope="row"><code>contributor</code></th>
-        <td class="prop-ect"><a href="http://schema.org/Person">Person</a> or <a href="http://schema.org/Organization">Organization</a></td>
-        <td class="prop-desc">Person or Organization who is responsible for providing or maintaining the information about the event. See also <a href="http://dublincore.org/documents/dcmi-terms/#terms-contributor">Dublin Core: contributor</a>.</td>
-      </tr>
-      <tr>
-        <th class="prop-nam" scope="row"><code>dateModified</code></th>
-        <td class="prop-ect">Date</td>
-        <td class="prop-desc">Date of the most recent revision to the information about the event.</td>
-      </tr>
-      <tr>
-	    <th class="prop-nam" scope="row"><code>historicalCollection</code></th>
-	    <td class="prop-ect">Text</td>
-	    <td class="prop-desc">The name of the data collection that this event record came from—for example, '1940 U.S. Census'.
-	  </tr>
-      <tr>
         <th class="prop-nam" scope="row"><code>media</code></th>
         <td class="prop-ect"><a href="http://schema.org/MediaObject">MediaObject</a></td>
         <td class="prop-desc">Image, video or audio object associated with this event.</td>
       </tr>
-      </tr><tr>
-        <th class="prop-nam" scope="row"><code>sources</code></th>
-        <td class="prop-ect"><a href="HistoricalRecord">HistoricalRecord</a></td>
-        <td class="prop-desc">A historical record containing information about the event.</td>
+      <tr>
+        <th class="prop-nam" scope="row"><code>sourceInfo</code></th>
+        <td class="prop-ect"><a href="SourceInfo">SourceInfo</a></td>
+        <td class="prop-desc">Information about the source of the information on the event.</td>
       </tr>
       <tr>
         <th class="prop-nam" scope="row"><code>type</code></th>
