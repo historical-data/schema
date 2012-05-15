@@ -48,14 +48,14 @@ title: Historical and Genealogical MicroData - Family
     </thead>
     <tbody class="supertype">
       <tr>
-        <th class="prop-nam" scope="row"><code>adoptions</code></th>
+        <th class="prop-nam" scope="row"><code>adoption</code></th>
         <td class="prop-ect"><a href="http://schema.org/Event">Event</a></td>
-        <td class="prop-desc">Events describing the adoptions in the family.</td>
+        <td class="prop-desc">Events describing the adoption(s) in the family.</td>
       </tr>
       <tr>
-        <th class="prop-nam" scope="row"><code>children</code></th>
+        <th class="prop-nam" scope="row"><code>child</code></th>
         <td class="prop-ect"><a href="http://schema.org/Person">Person</a></td>
-        <td class="prop-desc">Person with the role of child in the family.</td>
+        <td class="prop-desc">Person(s) with the role of child in the family.</td>
       </tr>
       <tr>
         <th class="prop-nam" scope="row"><code>divorce</code></th>
@@ -68,9 +68,9 @@ title: Historical and Genealogical MicroData - Family
         <td class="prop-desc">An event describing the details of a marriage.</td>
       </tr>
       <tr>
-        <th class="prop-nam" scope="row"><code>parents</code></th>
+        <th class="prop-nam" scope="row"><code>parent</code></th>
         <td class="prop-ect"><a href="http://schema.org/Person">Person</a></td>
-        <td class="prop-desc">Person with the role of parent/partner in the family.</td>
+        <td class="prop-desc">Person(s) with the role of parent/partner in the family.</td>
       </tr>
       <tr>
         <th class="prop-nam" scope="row"><code>sourceInfo</code></th>

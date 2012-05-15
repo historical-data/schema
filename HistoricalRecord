@@ -259,24 +259,24 @@ title: Historical and Genealogical MicroData - HistoricalRecord
         <td class="prop-desc">Text content of the record.</td>
       </tr>
       <tr>
-        <th class="prop-nam" scope="row"><code>dates</code></th>
+        <th class="prop-nam" scope="row"><code>date</code></th>
         <td class="prop-ect">Date</td>
         <td class="prop-desc">The date(s) and time periods that are referenced by the <em>content</em> of the record.</td>
       </tr>
       <tr>
-        <th class="prop-nam" scope="row"><code>events</code></th>
+        <th class="prop-nam" scope="row"><code>event</code></th>
         <td class="prop-ect"><a href="http://schema.org/Event">Event</a></td>
-        <td class="prop-desc">Events that are described or referenced by this record.</td>
+        <td class="prop-desc">Event(s) that are described or referenced by this record.</td>
       </tr>      
       <tr>
-        <th class="prop-nam" scope="row"><code>families</code></th>
+        <th class="prop-nam" scope="row"><code>family</code></th>
         <td class="prop-ect"><a href="Family">Family</a></td>
-        <td class="prop-desc">Families that are described or referenced by this record.</td>
+        <td class="prop-desc">Family(ies) that are described or referenced by this record.</td>
       </tr>      
       <tr>
-        <th class="prop-nam" scope="row"><code>locations</code></th>
+        <th class="prop-nam" scope="row"><code>location</code></th>
         <td class="prop-ect"><a href="http://schema.org/Place">Place</a></td>
-        <td class="prop-desc">The place(s) and locations that are referenced by the <em>content</em> of the record.</td>
+        <td class="prop-desc">The place(s) and location(s) that are referenced by the <em>content</em> of the record.</td>
       </tr>
       <tr>
         <th class="prop-nam" scope="row"><code>note</code></th>
@@ -284,9 +284,9 @@ title: Historical and Genealogical MicroData - HistoricalRecord
         <td class="prop-desc">Note or comment related to the record.</td>
       </tr>      
       <tr>
-        <th class="prop-nam" scope="row"><code>persons</code></th>
+        <th class="prop-nam" scope="row"><code>person</code></th>
         <td class="prop-ect"><a href="http://schema.org/Person">Person</a></td>
-        <td class="prop-desc">Persons that are described or referenced by this record.</td>
+        <td class="prop-desc">Person(s) that are described or referenced by this record.</td>
       </tr>      
       <tr>
         <th class="prop-nam" scope="row"><code>sourceInfo</code></th>

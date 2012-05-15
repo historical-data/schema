@@ -41,7 +41,7 @@ title: Historical and Genealogical MicroData - Person
         <td class="prop-desc">An event describing the details of a person's death. (Replaces or enhances <a href="http://schema.org/Person">Person</a> <code>deathDate</code>)</td>
       </tr>
       <tr>
-        <th class="prop-nam" scope="row"><code>events</code></th>
+        <th class="prop-nam" scope="row"><code>event</code></th>
         <td class="prop-ect"><a href="http://schema.org/Event">Event</a></td>
         <td class="prop-desc">Event(s) describing a significant incident in the lifetime of a person. (Can be used in place of <a href="http://schema.org/Person">Person</a> 
 <code>homeLocation</code>, <code>jobTitle</code>, <code>memberOf</code>, <code>worksFor</code> and for other significant life events.)</td>
@@ -52,7 +52,7 @@ title: Historical and Genealogical MicroData - Person
         <td class="prop-desc">Gender of the person. For a genealogical profile, recommended values are "male", "female", and "unknown".</td>
       </tr>
       <tr>
-        <th class="prop-nam" scope="row"><code>marriages</code></th>
+        <th class="prop-nam" scope="row"><code>marriage</code></th>
         <td class="prop-ect"><a href="http://schema.org/Event">Event</a></td>
         <td class="prop-desc">Event(s) describing the details of a person's marriage(s).</td>
       </tr>
@@ -60,11 +60,6 @@ title: Historical and Genealogical MicroData - Person
         <th class="prop-nam" scope="row"><code>sourceInfo</code></th>
         <td class="prop-ect"><a href="SourceInfo">SourceInfo</a></td>
         <td class="prop-desc">Information about the source of the information on the person.</td>
-      </tr>
-      <tr>
-        <th class="prop-nam" scope="row"><code>spouses</code></th>
-        <td class="prop-ect"><a href="http://schema.org/Person">Person</a></td>
-        <td class="prop-desc">The spouse(s) of the person.</td>
       </tr>
     </tbody>
   </table>
