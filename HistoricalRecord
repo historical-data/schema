@@ -273,6 +273,11 @@ title: Historical and Genealogical MicroData - HistoricalRecord
         <td class="prop-ect"><a href="Family">Family</a></td>
         <td class="prop-desc">Family(ies) that are described or referenced by this record.</td>
       </tr>      
+      <tr>	
+        <th class="prop-nam" scope="row"><code>historicalCollection</code></th>	
+        <td class="prop-ect">Text</td>	
+        <td class="prop-desc">The name of the data collection that this record came from—for example, '1940 U.S. Census'.	
+      </tr>
       <tr>
         <th class="prop-nam" scope="row"><code>location</code></th>
         <td class="prop-ect"><a href="http://schema.org/Place">Place</a></td>
