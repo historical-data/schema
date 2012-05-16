@@ -1,0 +1,67 @@
+---
+layout: default
+title: Historical and Genealogical MicroData - Person
+---
+
+<div id="main" role="main">
+  <h1 class="page-title"><a href="http://schema.org/Thing">Thing</a> &gt; <a href="http://schema.org/Person">Person</a></h1>
+  A historical or genealogical profile may include these additional attributes of Person:
+  <table cellspacing="3" class="definition-table">
+    <thead>
+      <tr>
+        <th>Property</th>
+        <th style="min-width:120px;">Expected Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <thead class="supertype">
+      <tr>
+        <th class="supertype-name" colspan="3">Additional Properties for a historical <a href="http://schema.org/Person">Person</a></th>
+      </tr>
+    </thead>
+    <tbody class="supertype">
+      <tr>
+        <th class="prop-nam" scope="row"><code>birth</code></th>
+        <td class="prop-ect"><a href="http://schema.org/Event">Event</a></td>
+        <td class="prop-desc">An event describing the details of a person's birth. (Replaces or enhances <a href="http://schema.org/Person">Person</a> <code>birthDate</code>.)</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>burial</code></th>
+        <td class="prop-ect"><a href="http://schema.org/Event">Event</a></td>
+        <td class="prop-desc">An event describing the details of a person's burial.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>christening</code></th>
+        <td class="prop-ect"><a href="http://schema.org/Event">Event</a></td>
+        <td class="prop-desc">An event describing the details of a person's baptism or christening.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>death</code></th>
+        <td class="prop-ect"><a href="http://schema.org/Event">Event</a></td>
+        <td class="prop-desc">An event describing the details of a person's death. (Replaces or enhances <a href="http://schema.org/Person">Person</a> <code>deathDate</code>)</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>event</code></th>
+        <td class="prop-ect"><a href="http://schema.org/Event">Event</a></td>
+        <td class="prop-desc">Event(s) describing a significant incident in the lifetime of a person. (Can be used in place of <a href="http://schema.org/Person">Person</a> 
+<code>homeLocation</code>, <code>jobTitle</code>, <code>memberOf</code>, <code>worksFor</code> and for other significant life events.)</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>gender</code></th>
+        <td class="prop-ect">Text</td>
+        <td class="prop-desc">Gender of the person. For a genealogical profile, recommended values are "male", "female", and "unknown".</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>marriage</code></th>
+        <td class="prop-ect"><a href="http://schema.org/Event">Event</a></td>
+        <td class="prop-desc">Event(s) describing the details of a person's marriage(s).</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>source</code></th>
+        <td class="prop-ect"><a href="HistoricalRecord">HistoricalRecord</a></td>
+        <td class="prop-desc">The source(s) of the information on the person.</td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="version">Schema Draft Version 0.4</div>
+</div>

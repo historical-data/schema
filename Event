@@ -1,0 +1,43 @@
+---
+layout: default
+title: Historical and Genealogical MicroData - Event
+---
+
+<div id="main" role="main">
+  <h1 class="page-title"><a href="http://schema.org/Thing">Thing</a> &gt; <a href="http://schema.org/Event">Event</a></h1>
+  A historical or genealogical event may include these additional attributes of Event:
+  <table cellspacing="3" class="definition-table">
+    <thead>
+      <tr>
+        <th>Property</th>
+        <th style="min-width:120px;">Expected Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <thead class="supertype">
+      <tr>
+        <th class="supertype-name" colspan="3">Additional Properties for a historical <a href="http://schema.org/Event">Event</a></th>
+      </tr>
+    </thead>
+    <tbody class="supertype">
+      <tr>
+        <th class="prop-nam" scope="row"><code>media</code></th>
+        <td class="prop-ect"><a href="http://schema.org/MediaObject">MediaObject</a></td>
+        <td class="prop-desc">Image, video or audio object associated with this event.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>source</code></th>
+        <td class="prop-ect"><a href="HistoricalRecord">HistoricalRecord</a></td>
+        <td class="prop-desc">The source(s) of the information on the event.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>type</code></th>
+        <td class="prop-ect">Text</td>
+        <td class="prop-desc">Type of event (e.g. reunion, employment, residence, education, etc.)
+ *Question: schema.org defines subclasses of Event for specific event types instead of a Type field. Should this field be eliminated and
+ instead new event subclasses be introduced?</td>
+      </tr>
+	  </tbody>
+  </table>
+  <div class="version">Schema Draft Version 0.4</div>
+</div>
