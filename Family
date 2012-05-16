@@ -63,6 +63,11 @@ title: Historical and Genealogical MicroData - Family
         <td class="prop-desc">An event describing the details of a divorce.</td>
       </tr>
       <tr>
+        <th class="prop-nam" scope="row"><code>event</code></th>
+        <td class="prop-ect"><a href="http://schema.org/Event">Event</a></td>
+        <td class="prop-desc">Event(s) describing a significant incident in the lifetime of a family.</td>
+      </tr>
+      <tr>
         <th class="prop-nam" scope="row"><code>marriage</code></th>
         <td class="prop-ect"><a href="http://schema.org/Event">Event</a></td>
         <td class="prop-desc">An event describing the details of a marriage.</td>
@@ -73,9 +78,9 @@ title: Historical and Genealogical MicroData - Family
         <td class="prop-desc">Person(s) with the role of parent/partner in the family.</td>
       </tr>
       <tr>
-        <th class="prop-nam" scope="row"><code>sourceInfo</code></th>
-        <td class="prop-ect"><a href="SourceInfo">SourceInfo</a></td>
-        <td class="prop-desc">Information about the source of the information on the family.</td>
+        <th class="prop-nam" scope="row"><code>source</code></th>
+        <td class="prop-ect"><a href="HistoricalRecord">HistoricalRecord</a></td>
+        <td class="prop-desc">The source(s) of the information on the family.</td>
       </tr>
     </tbody>
   </table>

@@ -289,11 +289,6 @@ title: Historical and Genealogical MicroData - HistoricalRecord
         <td class="prop-desc">Person(s) that are described or referenced by this record.</td>
       </tr>      
       <tr>
-        <th class="prop-nam" scope="row"><code>sourceInfo</code></th>
-        <td class="prop-ect"><a href="SourceInfo">SourceInfo</a></td>
-        <td class="prop-desc">Information about the source of the historical record.</td>
-      </tr>
-      <tr>
         <th class="prop-nam" scope="row"><code>type</code></th>
         <td class="prop-ect">Text</td>
         <td class="prop-desc">Type of record.</td>

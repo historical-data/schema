@@ -57,9 +57,9 @@ title: Historical and Genealogical MicroData - Person
         <td class="prop-desc">Event(s) describing the details of a person's marriage(s).</td>
       </tr>
       <tr>
-        <th class="prop-nam" scope="row"><code>sourceInfo</code></th>
-        <td class="prop-ect"><a href="SourceInfo">SourceInfo</a></td>
-        <td class="prop-desc">Information about the source of the information on the person.</td>
+        <th class="prop-nam" scope="row"><code>source</code></th>
+        <td class="prop-ect"><a href="HistoricalRecord">HistoricalRecord</a></td>
+        <td class="prop-desc">The source(s) of the information on the person.</td>
       </tr>
     </tbody>
   </table>
